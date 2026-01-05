@@ -16,10 +16,23 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
+      text-align: center;
+    }
+    .heart {
+      font-size: 48px;
+      animation: pulse 1.6s infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
     }
     h1, h2 {
-      text-align: center;
       font-weight: 600;
+    }
+    h2 {
+      margin-top: 40px;
     }
     a {
       color: #4a6fa5;
@@ -33,6 +46,7 @@
 </head>
 <body>
   <div class="container">
+    <div class="heart">❤️</div>
     <h1>Terms of Use</h1>
     <p>Last updated: January 2026</p>
 
