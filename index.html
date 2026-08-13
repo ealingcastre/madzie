@@ -52,6 +52,40 @@
       display: block;
       margin: 8px 0;
     }
+    .splash-video {
+      margin: 32px auto;
+    }
+    .splash-video video {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+      display: block;
+      margin: 0 auto;
+    }
+    .splash-caption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .screenshots {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      padding: 24px 4px;
+      margin: 8px 0 32px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .screenshots img {
+      height: 440px;
+      width: auto;
+      border-radius: 22px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -62,8 +96,26 @@
     <p>Welcome to a space for reflection and clarity.</p>
     <p>This app is designed to support your emotional wellbeing through journaling. By capturing your thoughts, you uncover patterns, reduce stress, and strengthen self‑trust.</p>
     <p>It is inspired by resilience, by courage, and by the quiet strength of those who fight unseen battles.</p>
+
+    <div class="splash-video">
+      <video autoplay muted loop playsinline controls>
+        <source src="assets/madzie-splash.mp4" type="video/mp4">
+      </video>
+      <p class="splash-caption">The app's splash screen — a tribute in motion.</p>
+    </div>
+
+    <div class="screenshots">
+      <img src="assets/screenshots/emotional-awareness.png" alt="Madzie screenshot — Emotional Awareness" loading="lazy">
+      <img src="assets/screenshots/honest-expression.png" alt="Madzie screenshot — Honest Expression" loading="lazy">
+      <img src="assets/screenshots/gain-new-insight.png" alt="Madzie screenshot — Gain New Insight" loading="lazy">
+      <img src="assets/screenshots/insight-and-growth.png" alt="Madzie screenshot — Insight & Growth" loading="lazy">
+      <img src="assets/screenshots/improve-self-understanding.png" alt="Madzie screenshot — Improve Self-Understanding" loading="lazy">
+      <img src="assets/screenshots/new-perspective.png" alt="Madzie screenshot — New Perspective" loading="lazy">
+      <img src="assets/screenshots/provoke-deep-reflection.png" alt="Madzie screenshot — Provoke Deep Reflection" loading="lazy">
+    </div>
+
     <p>💛 Your diary entries remain yours alone — stored on your device by default, with optional encrypted iCloud or Google Drive sync under your control.</p>
-   
+
 
     <div class="links">
       <a href="privacy-policy.html">Privacy Policy</a>
