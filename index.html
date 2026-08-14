@@ -86,6 +86,41 @@
       scroll-snap-align: center;
       flex-shrink: 0;
     }
+    .download-cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.15s ease;
+    }
+    .store-badge:hover {
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    .store-badge .glyph {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+    .platform-note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
   </style>
 </head>
 <body>
@@ -96,6 +131,15 @@
     <p>Welcome to a space for reflection and clarity.</p>
     <p>This app is designed to support your emotional wellbeing through journaling. By capturing your thoughts, you uncover patterns, reduce stress, and strengthen self‑trust.</p>
     <p>It is inspired by resilience, by courage, and by the quiet strength of those who fight unseen battles.</p>
+
+    <div class="download-cta">
+      <a class="store-badge" href="https://apps.apple.com/au/app/madzie/id6757659802" target="_blank" rel="noopener">
+        <span class="glyph"></span>
+        <span>Download on the App Store</span>
+      </a>
+      <!-- Google Play badge goes here once the Android release passes review -->
+    </div>
+    <p class="platform-note">Available for iPhone and Mac — with Android coming soon to Google Play.</p>
 
     <div class="splash-video">
       <video autoplay muted loop playsinline controls>
