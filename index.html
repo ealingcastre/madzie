@@ -72,13 +72,20 @@
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
     }
-    .screenshots img {
+    .screenshot-frame {
       height: 440px;
-      width: auto;
       border-radius: 22px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+      overflow: hidden;
       scroll-snap-align: center;
       flex-shrink: 0;
+      background: transparent;
+    }
+    .screenshot-frame img {
+      display: block;
+      height: 100%;
+      width: auto;
+      background: transparent;
     }
     .download-cta {
       display: flex;
@@ -142,13 +149,13 @@
     </div>
 
     <div class="screenshots">
-      <img src="assets/screenshots/emotional-awareness.png" alt="Madzie screenshot — Emotional Awareness" loading="lazy">
-      <img src="assets/screenshots/honest-expression.png" alt="Madzie screenshot — Honest Expression" loading="lazy">
-      <img src="assets/screenshots/gain-new-insight.png" alt="Madzie screenshot — Gain New Insight" loading="lazy">
-      <img src="assets/screenshots/insight-and-growth.png" alt="Madzie screenshot — Insight & Growth" loading="lazy">
-      <img src="assets/screenshots/improve-self-understanding.png" alt="Madzie screenshot — Improve Self-Understanding" loading="lazy">
-      <img src="assets/screenshots/new-perspective.png" alt="Madzie screenshot — New Perspective" loading="lazy">
-      <img src="assets/screenshots/provoke-deep-reflection.png" alt="Madzie screenshot — Provoke Deep Reflection" loading="lazy">
+      <div class="screenshot-frame"><img src="assets/screenshots/emotional-awareness.png" alt="Madzie screenshot — Emotional Awareness" loading="lazy"></div>
+      <div class="screenshot-frame"><img src="assets/screenshots/honest-expression.png" alt="Madzie screenshot — Honest Expression" loading="lazy"></div>
+      <div class="screenshot-frame"><img src="assets/screenshots/gain-new-insight.png" alt="Madzie screenshot — Gain New Insight" loading="lazy"></div>
+      <div class="screenshot-frame"><img src="assets/screenshots/insight-and-growth.png" alt="Madzie screenshot — Insight & Growth" loading="lazy"></div>
+      <div class="screenshot-frame"><img src="assets/screenshots/improve-self-understanding.png" alt="Madzie screenshot — Improve Self-Understanding" loading="lazy"></div>
+      <div class="screenshot-frame"><img src="assets/screenshots/new-perspective.png" alt="Madzie screenshot — New Perspective" loading="lazy"></div>
+      <div class="screenshot-frame"><img src="assets/screenshots/provoke-deep-reflection.png" alt="Madzie screenshot — Provoke Deep Reflection" loading="lazy"></div>
     </div>
 
     <p>💜 Your diary entries remain yours alone — stored on your device by default, with optional encrypted iCloud or Google Drive sync under your control.</p>
