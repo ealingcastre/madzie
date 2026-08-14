@@ -75,7 +75,12 @@
     .screenshot-frame {
       height: 440px;
       width: 203px;
-      border-radius: 22px;
+      /* Source screenshots are pre-cropped by 3% per side (see
+         assets/screenshots/) to remove a white canvas margin baked into
+         the original App Store art — most pronounced at the rounded
+         corners, since a rounded card inscribed in a square canvas can't
+         reach the canvas's own corners. This radius clips what's left. */
+      border-radius: 32px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
       overflow: hidden;
       scroll-snap-align: center;
