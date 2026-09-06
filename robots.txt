@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madzie.com.au/sitemap.xml
